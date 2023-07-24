@@ -1,0 +1,17 @@
+<div class="container d-flex ">
+  <div class="row" *ngFor ="let tenis of tenis">
+    <div class="card mb-4" style="width: 16rem;">
+      <img class="card-img-top"
+        src="{{ tenis.imagem }}"
+        alt="Card image cap">
+      <div class="card-body d-flex flex-column align-items-start">
+        <h5 class="card-title">{{ tenis.nome }}</h5>
+        <p class="card-text">{{ tenis.descricao }}</p>
+      </div>
+      <div class="baixo">
+        <a href="#" class="btn btn-primary">Comprar</a>
+        <span class="badge mt-auto">R$ {{ tenis.preco }}</span>
+      </div>
+    </div>
+  </div>
+</div>
